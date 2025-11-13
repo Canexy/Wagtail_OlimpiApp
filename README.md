@@ -1,4 +1,4 @@
-# Django 'OlimpiApp'
+# Django 'OlimpiApp' - Versión con Wagtail
 ## Sistema de gestión para competiciones deportivas desarrollado con Django.
 
 ## Implementaciones:
