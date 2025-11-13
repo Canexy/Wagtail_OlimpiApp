@@ -1,1 +1,0 @@
-# Probar si funciona todo. Si no, añadir 'migrate' y creación de superusuario.
