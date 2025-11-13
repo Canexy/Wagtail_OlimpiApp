@@ -1,0 +1,13 @@
+Django==5.2.6
+django-extensions==3.2.3
+django-debug-toolbar==4.4.6
+django-filter==25.2
+djangorestframework==3.16.1
+django-csp==3.7
+django-dotenv==1.4.2
+python-dotenv==1.1.1
+beautifulsoup4==4.14.2
+requests==2.32.5
+pillow==11.3.0
+openpyxl==3.1.5
+sqlparse==0.5.3

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Detalles del Equipo:</h2>
+    
+    <h3>{{ object.nomEqu }}</h3>
+    <p><strong>ID:</strong> {{ object.idEqu }}</p>
+    <p><strong>Equipo Olímpico:</strong>
+        {% if object.oliEqu == 'S' %}
+            Sí
+        {% else %}
+            No
+        {% endif %}
+    </p>
+    
+    <h4>Participantes ({{ object.participantes.count }}):</h4>
+    {% if object.participantes.all %}
+        <ul>
+            {% for participante in object.participantes.all %}
+                <li>{{ participante.nomPar }} - {{ participante.curPar }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay participantes en este equipo.</p>
+    {% endif %}
+    
+    <br>
+    <a href="{% url 'lista_equipos' %}">← Volver a la lista de equipos</a>
+{% endblock %}

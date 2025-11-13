@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Vista de los Equipos:</h2>
+    <ul>
+        {% for equipo in object_list %}
+            <li>
+                <a href="{% url 'detalle_equipo' equipo.idEqu %}">{{ equipo.nomEqu }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

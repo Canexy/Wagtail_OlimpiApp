@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="/your-name/" method="post">
+        <label for="your_name">Your name: </label>
+        <input id="your_name" type="text" name="your_name" maxlength="100" required>
+        <input type="submit" value="OK">
+    </form>
+{% endblock %}
+
+<!--
+# No implementado aún.-->
